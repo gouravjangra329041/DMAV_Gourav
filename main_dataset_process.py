@@ -1,5 +1,6 @@
 import pandas as pd
 
+from missing_outliers import detect_outliers
 from missing_barchart import plot_bar_missing
 from missing_linechart import plot_line_missing
 from missing_piechart import plot_pie_missing
@@ -30,6 +31,8 @@ def main():
     # Histogram
     plot_histogram(df)
 
+    # Outlier detection
+    detect_outliers(df)
 
 if __name__ == "__main__":
     main()
